@@ -7,20 +7,20 @@ class Mcpmedic < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/useless-rs/mcpmedic/releases/download/v0.3.0/mcpmedic-macos-aarch64.tar.gz"
-      sha256 "0b992aceafdc864e6ead8c4a29d7abd530e8cdf195c6d1e6f65ca948761e01eb"
+      sha256 "e15902289a839f2a28a00f4b68179ed35d4143ef4922206d494e3172fd1ac128"
     elsif Hardware::CPU.intel?
       url "https://github.com/useless-rs/mcpmedic/releases/download/v0.3.0/mcpmedic-macos-x86_64.tar.gz"
-      sha256 "b17ee15928cbe37161e3219c116d32cb75274f637fa364eb913dd286ef6badd1"
+      sha256 "ec861909393e848a6403ea0fca9b6ffa95a1ed3e71010f702b64d6e2171ab47d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/useless-rs/mcpmedic/releases/download/v0.3.0/mcpmedic-linux-aarch64.tar.gz"
-      sha256 "34a5b8b983ee67e997356d97e48a700710597091bc3dc279c2cc9bc74107ef89"
+      sha256 "901eba9dc458b98ca8cfa8394e3bd13f4edbc4668781d6d80ea553dacb00019e"
     elsif Hardware::CPU.intel?
       url "https://github.com/useless-rs/mcpmedic/releases/download/v0.3.0/mcpmedic-linux-x86_64.tar.gz"
-      sha256 "0e5cfae8a2a0f6d62db67ff571a26e0e6283d2da571d91e40bb9d795cda910e0"
+      sha256 "0ee04ffd1c58edb1a93a020a6506a045872f8bc8c725626eb84dd4563b9a7098"
     end
   end
 
