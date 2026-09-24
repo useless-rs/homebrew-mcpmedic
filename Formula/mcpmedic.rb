@@ -1,26 +1,26 @@
 class Mcpmedic < Formula
   desc "First aid for MCP configs: scan, doctor, diff and sync MCP servers across every AI tool you use"
   homepage "https://github.com/useless-rs/mcpmedic"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/useless-rs/mcpmedic/releases/download/v0.9.0/mcpmedic-macos-aarch64.tar.gz"
-      sha256 "0bb31fcc47dd8d761c97a37a5a34a2cca1f799970d2e73480569180f28c1b551"
+      url "https://github.com/useless-rs/mcpmedic/releases/download/v0.10.0/mcpmedic-macos-aarch64.tar.gz"
+      sha256 "d66608313e74c06144f828fdd394198682b56abac67c756a11bb275493396ea9"
     elsif Hardware::CPU.intel?
-      url "https://github.com/useless-rs/mcpmedic/releases/download/v0.9.0/mcpmedic-macos-x86_64.tar.gz"
-      sha256 "bfdabd89a090787dbc019833ba131983506d306a3b605558f53f28efd7e04475"
+      url "https://github.com/useless-rs/mcpmedic/releases/download/v0.10.0/mcpmedic-macos-x86_64.tar.gz"
+      sha256 "196fa3cb1eabf143fe49246acceac30fab67e3459329a8a7057bcb716760d2bf"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/useless-rs/mcpmedic/releases/download/v0.9.0/mcpmedic-linux-aarch64.tar.gz"
-      sha256 "7134ccfdd81488aa5949444902ead7c2b24ced0b8558c6c68dce0475b1be96bd"
+      url "https://github.com/useless-rs/mcpmedic/releases/download/v0.10.0/mcpmedic-linux-aarch64.tar.gz"
+      sha256 "ac247aa934ca6aeb4e33c01e36b7c31a1addc5e6db5fdc17a8b2e7531952f5d7"
     elsif Hardware::CPU.intel?
-      url "https://github.com/useless-rs/mcpmedic/releases/download/v0.9.0/mcpmedic-linux-x86_64.tar.gz"
-      sha256 "60d9fb3343b4c7c91009a39d9f3550229b697fb360511320945125e7db195548"
+      url "https://github.com/useless-rs/mcpmedic/releases/download/v0.10.0/mcpmedic-linux-x86_64.tar.gz"
+      sha256 "350d087c0917d4a1059a0b32a2c12aee22487a264c38b10689100687e73a4033"
     end
   end
 
